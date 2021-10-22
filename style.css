@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap");
+
+:root {
+  --primary-color: hsl(12, 88%, 59%);
+  --text-primary: hsl(228, 39%, 23%);
+  --text-secondary: hsl(227, 12%, 61%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Be Vietnam", sans-serif;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3em;
+  color: var(--text-primary);
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-control {
+  padding: 15px 30px;
+  border-radius: 30px;
+  display: inline-block;
+  border: 0;
+  outline: 0;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.rotate {
+  animation: rotate 0.5s ease;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+header {
+  height: 100%;
+  background-image: url(./images/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-position-y: -200px;
+  background-position-x: 750px;
+  padding-bottom: 30px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.two-column {
+  display: flex;
+}
+
+.vertical-center {
+  align-items: center;
+}
+
+.text-dark {
+  color: hsl(227, 12%, 61%);
+}
+
+.primary-btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 30px;
+  display: inline-block;
+  border: 0;
+  outline: 0;
+}
+
+.secondary-btn {
+  background-color: #fff;
+  color: var(--primary-color);
+  padding: 15px 30px;
+  border-radius: 30px;
+  display: inline-block;
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.limit {
+  width: 450px;
+}
+
+.pos-rel {
+  position: relative;
+  z-index: 5;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.bg-img {
+  position: absolute;
+  z-index: 1;
+  bottom: -1300px;
+}
+
+.pd-25 {
+  padding: 25px 0;
+}
+
+.desktop-hide {
+  display: none;
+}
+
+nav {
+  padding: 35px 0 20px 0;
+}
+
+#open {
+  cursor: pointer !important;
+}
+
+.mobile-nav {
+  position: relative;
+  z-index: 2;
+}
+
+nav > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-img {
+  height: 80vh;
+}
+
+.nav-list-items {
+  display: inline-block;
+  padding: 0 15px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.heading {
+  width: 90%;
+  margin: 0;
+}
+
+.heading-description {
+  width: 350px;
+}
+
+.service-heading {
+  display: flex;
+}
+
+main {
+  background-image: url(./images/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-position-y: 250px;
+  background-position-x: -500px;
+}
+
+.service-heading > h5 {
+  margin: 0;
+}
+
+.list-number {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: 700;
+  padding: 5px 15px;
+  border-radius: 25px;
+  margin-right: 15px;
+}
+
+.service {
+  margin-bottom: 25px;
+}
+
+.pad-100 {
+  padding: 0 100px 0 0;
+}
+
+.service > p {
+  margin-left: 65px;
+}
+
+.testimonials {
+  text-align: center;
+}
+
+.testimonials-grid {
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 500px);
+  grid-column-gap: 25px;
+  overflow: hidden;
+}
+
+/* .testimonial-content {
+  padding: 0 25px;
+} */
+
+.testimonial {
+  background-color: hsl(0, 0%, 98%);
+  position: relative;
+  padding: 60px 25px 25px 25px;
+}
+
+.profile-pic {
+  position: absolute;
+  top: -72px;
+  left: calc(50% - 72px);
+}
+
+footer {
+  background-color: hsl(233, 12%, 13%);
+  color: #fff;
+}
+
+.footer-links {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-links > li {
+  padding: 5px 0;
+}
+
+.social-links {
+  margin-top: 35px;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.error-message {
+  display: block;
+  margin-left: 15px;
+  color: rgb(255, 34, 34);
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 1060px) {
+  .mobile-hide {
+    display: none;
+  }
+
+  header {
+    background-position-y: -300px;
+    background-position-x: 300px;
+  }
+
+  .heading {
+    width: 100%;
+  }
+
+  .mobile-center {
+    justify-content: center;
+
+    text-align: center;
+  }
+
+  .mobile-reverse {
+    flex-direction: column-reverse !important;
+  }
+
+  .heading-description {
+    margin: 25px auto;
+    width: 100%;
+  }
+
+  .header-img {
+    height: 300px;
+  }
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.226);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 10%,
+    rgba(0, 0, 0, 0.555) 100%
+  );
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  display: none;
+}
+
+@media only screen and (max-width: 820px) {
+  .pad-100 {
+    padding: 25px 0;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  .desktop-hide {
+    display: block;
+  }
+
+  header {
+    background-position-y: -300px;
+    background-position-x: 300px;
+  }
+
+  nav {
+    padding: 35px 0;
+  }
+
+  nav > .container {
+    flex-direction: column;
+  }
+
+  .nav-list {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    position: relative;
+    z-index: 2;
+    margin-top: 25px;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 10vh;
+  }
+
+  .menu-show {
+    height: 270px;
+  }
+
+  .nav-list-items {
+    padding: 15px 0;
+    text-align: center;
+    display: block;
+  }
+
+  .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .header-img {
+    height: 200px;
+  }
+
+  header {
+    background-position-y: -300px;
+    background-position-x: 50px;
+  }
+
+  .header-content {
+    align-items: center;
+  }
+
+  .services {
+    text-align: center;
+  }
+
+  .two-column {
+    flex-direction: column;
+  }
+
+  .service > p {
+    margin-left: 0;
+  }
+
+  .display-flex {
+    flex-direction: column;
+  }
+
+  .limit {
+    text-align: center;
+    width: 70%;
+  }
+}
+
+@media screen and (min-height: 700px) {
+  header {
+    height: 100vh;
+  }
+}
